@@ -1,0 +1,337 @@
+
+
+h1{
+    color: red;
+}
+
+.nav > li >a {
+    color: rgb(255, 240, 252);
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.sample{
+    width: 80vw;
+}
+
+.dd{
+  height: 50vh;
+  width: 190vw;
+}
+.data{
+  font-size: 40px;
+}
+header{
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    padding: 14px 40px;
+}
+#top > h2, #access > h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(171, 255, 156);
+    padding-top: 40px;
+}
+body{
+  font-size: 20px;
+    text-align: center;
+    color: rgb(131, 146, 136);
+    padding-top: 40px;
+}
+.contents > img {
+    height: 150px;
+}
+.description {
+    width: 50%;
+}
+.contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.logo{
+    height: 50px;
+    width: 8vw;
+    
+}  
+.navi {
+    display: flex;
+}
+.navi > li > a {
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.unit{
+    width: 80vw;
+}
+.hate{
+    width: 80vw;
+}
+.happy{
+    width: 80vw;
+}
+.view{
+    width: 80vw;
+}
+.fat{
+    width: 80vw;
+}
+.sample1{
+    width: 80vw;
+}
+.sample2{
+    width: 80vw;
+}
+.sample3{
+    width: 7vw;
+}
+.gaki{
+    width: 6vw;
+}
+.gakuto{
+    width: 2vw;
+}
+.access{
+    width: 7vw;
+}
+.ga{
+    width: 2vw;
+}
+.ha{
+    width: 1vw;
+}
+.ka{width: 9vw;}
+.da{width: 2vw;}
+.location{
+    width: 4vw;
+}
+    
+
+    script {
+        display: none;
+    }
+    body {
+        line-height: 1;
+    }
+
+    /*  */
+    html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video    
+    {
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+
+        outline-color: initial;
+        outline-style: initial;
+        outline-width: 0px;
+        vertical-align: baseline;
+
+        border-radius: 0vw;
+
+        background-image: initial;
+    
+    }
+    .welcome{
+        background-image: url(../img/1.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: aliceblue;
+    }
+
+    footer {
+        text-align: center;
+        background-color: aquamarine;
+        color: whitesmoke;
+        padding: 20px 0;
+        margin-top: 100px;
+        font-size: 20px;
+    }
+
+    .footer-menu {
+        height: 60px;
+    }
+
+    .footer-menu-list {
+        list-style: none;
+        text-align: center;
+        line-height: 60px;
+    }
+    .footer-menu-list li{
+        margin: 10px;
+        display: inline;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 80px;
+
+    }
+    .guideline {
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .guideline > li {
+        margin-top: 14px;
+    }
+
+    .c-header {
+        align-items: center;
+        background-color: #eeeeee; /* カスタマイズしてください */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem; /* カスタマイズしてください */
+        width: 100%;
+      }
+      
+      .c-header__logo {
+        color: #000; /* カスタマイズしてください */
+        min-width: 80px; /* カスタマイズしてください */
+        text-decoration: none;
+      }
+      
+      .c-header__list {
+        box-sizing: border-box;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .c-header__list-item {
+        list-style: none;
+        text-decoration: none;
+      }
+      
+      .c-header__list-link {
+        color: #000; /* カスタマイズしてください */
+        display: block;
+        margin-right: 20px; /* カスタマイズしてください */
+        text-decoration: none;
+        padding: 10px 0px; /* カスタマイズしてください */
+      }
+      
+      .c-header__list-link:hover {
+        filter: opacity(0.6); /* カスタマイズしてください */
+      }
+      
+      .c-hamburger-menu {
+        position: relative;
+      }
+      
+      @media screen and (max-width: 750px) {
+        .c-hamburger-menu__list {
+          background-color: #eeeeee; /* カスタマイズしてください */
+          align-items: flex-start;
+          display: flex;
+          flex-direction: column;
+          left: 0;
+          padding: 2rem; /* カスタマイズしてください */
+          position: absolute;
+          transform: translateX(-100%);
+          transition: 0.3s; /* カスタマイズしてください */
+          top: 100%;
+          width: 100%;
+        }
+      
+        #hamburger:checked ~ .c-hamburger-menu__list {
+          transform: translateX(0%);
+          transition: 0.3s;
+        }
+      }
+      
+      .c-hamburger-menu__input {
+        display: none;
+      }
+      
+      .c-hamburger-menu__bg {
+        background-color: #000; /* カスタマイズしてください */
+        cursor: pointer;
+        display: none;
+        height: 100vh;
+        left: 0;
+        opacity: 0.4; /* カスタマイズしてください */
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+      }
+      
+      #hamburger:checked ~ .c-hamburger-menu__bg {
+        display: block;
+      }
+      
+      .c-hamburger-menu__button {
+        display: none;
+      }
+      
+      @media screen and (max-width: 750px) {
+        .c-hamburger-menu__button {
+          align-items: center;
+          appearance: none;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          flex-direction: column;
+          gap: 5px; /* カスタマイズしてください */
+          height: 32px; /* カスタマイズしてください */
+          justify-content: center;
+          width: 32px; /* カスタマイズしてください */
+        }
+      }
+      
+      .c-hamburger-menu__button-mark {
+        background-color: #000; /* カスタマイズしてください */
+        display: block;
+        height: 1px; /* カスタマイズしてください */
+        transition: 0.3s; /* カスタマイズしてください */
+        width: 20px; /* カスタマイズしてください */
+      }
+      
+      @media screen and (max-width: 750px) {
+        #hamburger:checked
+          ~ .c-hamburger-menu__button
+          .c-hamburger-menu__button-mark:nth-of-type(1) {
+          transform: translate(2px, 1px) rotate(45deg); /* カスタマイズしてください */
+          transform-origin: 0%; /* カスタマイズしてください */
+        }
+        #hamburger:checked
+          ~ .c-hamburger-menu__button
+          .c-hamburger-menu__button-mark:nth-of-type(2) {
+          opacity: 0;
+        }
+        #hamburger:checked
+          ~ .c-hamburger-menu__button
+          .c-hamburger-menu__button-mark:nth-of-type(3) {
+          transform: translate(2px, 3px) rotate(-45deg); /* カスタマイズしてください */
+          transform-origin: 0%; /* カスタマイズしてください */
+        }
+      }
+
+    
+      

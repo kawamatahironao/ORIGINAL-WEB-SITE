@@ -1,0 +1,311 @@
+.l-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  
+  
+  .c-box::before {
+    content: attr(data-number);
+    font-size: 40px;
+    color: skyblue;
+  }
+  
+  .c-box.--active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s;
+  }
+  
+  .c-description {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin-bottom: 170px;
+    width: 100vw;
+  }
+  .cp_menu {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .cp_menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000000;
+    line-height: 1;
+  }
+  .cp_menu label {
+    display: block;
+    position: relative;
+    margin: 0 0 2px 0;
+    padding: 12px;
+    line-height: 1;
+    color: #ffffff;
+    background: #1b2538;
+    cursor: pointer;
+  }
+  .cp_menu label::before {
+    position: absolute;
+    content: '▼';
+    color: #ffffff;
+    right: 0.5em;
+    top: 25%;
+  }
+  .cp_menu input {
+    display: none;
+  }
+  .cp_menu ul {
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    list-style: none;
+  }
+  .cp_menu li {
+    overflow-y: hidden;
+    max-height: 0;
+    transition: all 0.5s;
+  }
+  /*リストが増えたらULごとに追加してください*/
+  #cp_menu_bar1:checked ~ #link1 li,
+  #cp_menu_bar2:checked ~ #link2 li {
+    max-height: 46px;
+    opacity: 1;
+  }
+  .cp_actab {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    color: #0d9479;
+  }
+  .cp_actab input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .cp_actab label {
+    font-weight: bold;
+    line-height: 3;
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    cursor: pointer;
+    margin: 0 0 1px 0;
+    background: #da3c41;
+  }
+  .cp_actab .cp_actab-content {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: max-height 0.35s;
+    transition: max-height 0.35s;
+    color: #333333;
+    background: #f1c6c6;
+  }
+  .cp_actab .cp_actab-content p {
+    margin: 1em;
+  }
+  /* :checked */
+  .cp_actab input:checked ~ .cp_actab-content {
+    max-height: 20em;
+  }
+  /* Icon */
+  .cp_actab label::after {
+    line-height: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+    text-align: center;
+  }
+  .cp_actab input[type=checkbox] + label::after {
+    content: '+';
+  }
+  .cp_actab input[type=checkbox]:checked + label::after {
+    transform: rotate(315deg);
+  }
+  body{
+    background-image: linear-gradient(cyan 50% transparent 50%);
+  }
+
+
+  h3{
+    color: #4eb99d;
+    font-size: 200px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  h4{
+    color: #da3c41;
+    font-size: 200px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  h5{
+    color: blue;
+    font-size: 200px;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+
+  .Form {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form {
+      margin-top: 40px;
+    }
+  }
+  .Form-Item {
+  
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+    }
+  }
+  .Form-Item:nth-child(5) {
+  
+  }
+  .Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label {
+      max-width: inherit;
+      display: flex;
+      align-items: center;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Label.isMsg {
+    margin-top: 8px;
+    margin-bottom: auto;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label.isMsg {
+      margin-top: 0;
+    }
+  }
+  .Form-Item-Label-Required {
+    border-radius: 6px;
+    margin-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 48px;
+    display: inline-block;
+    text-align: center;
+    background: #545454;
+    color: #fff;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Label-Required {
+      border-radius: 4px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      width: 32px;
+      font-size: 10px;
+    }
+  }
+  .Form-Item-Input {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 48px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Input {
+      margin-left: 0;
+      margin-top: 18px;
+      height: 40px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Item-Textarea {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-left: 40px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 216px;
+    flex: 1;
+    width: 100%;
+    max-width: 410px;
+    background: #eaedf2;
+    font-size: 18px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Item-Textarea {
+      margin-top: 18px;
+      margin-left: 0;
+      height: 200px;
+      flex: inherit;
+      font-size: 15px;
+    }
+  }
+  .Form-Btn {
+    border-radius: 6px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 280px;
+    display: block;
+    letter-spacing: 0.05em;
+    background: #545454;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Btn {
+      margin-top: 24px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 160px;
+      font-size: 16px;
+    }
+  }
