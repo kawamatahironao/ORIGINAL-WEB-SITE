@@ -78,6 +78,7 @@ body{
 .happy{
     width: 80vw;
 }
+
 .view{
     width: 80vw;
 }
@@ -198,7 +199,12 @@ body{
     .guideline > li {
         margin-top: 14px;
     }
+.box{
+  width: 200px;
+  height: 200px;
+  border: solid 2px black;
 
+}
     .c-header {
         align-items: center;
         background-color: #eeeeee; /* カスタマイズしてください */
