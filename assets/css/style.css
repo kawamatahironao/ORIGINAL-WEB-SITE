@@ -4,10 +4,17 @@ h1{
     color: red;
 }
 
+.box{
+  width: 200px;
+  height: 200px;
+  border: solid 2px black;
+  
+}
+
 .nav > li >a {
     color: rgb(255, 240, 252);
     font-size: 20px;
-    margin-left: 20px;
+    margin-right: 20px;
     text-decoration: none;
 }
 .sample{
@@ -39,6 +46,9 @@ body{
     text-align: center;
     color: rgb(131, 146, 136);
     padding-top: 40px;
+    background-color: antiquewhite;
+    font-weight: bold;
+    line-height: 1.5;
 }
 .contents > img {
     height: 150px;
@@ -51,8 +61,8 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin: 20px auto;
+    margin-top: 10px;
+    margin: 10px auto;
 }
 
 .logo{
@@ -199,12 +209,8 @@ body{
     .guideline > li {
         margin-top: 14px;
     }
-.box{
-  width: 200px;
-  height: 200px;
-  border: solid 2px black;
 
-}
+
     .c-header {
         align-items: center;
         background-color: #eeeeee; /* カスタマイズしてください */
